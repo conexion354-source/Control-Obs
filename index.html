@@ -2,25 +2,65 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcast Control Pro</title>
-    
-    <link rel="manifest" href="manifest.json" />
-    <meta name="theme-color" content="#dc2626" />
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@900&family=Orbitron:wght@700&family=Roboto:wght@900&display=swap">
-    
+    <title>Broadcast Pro</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
 </head>
-<body class="bg-zinc-950 text-white m-0 p-0 overflow-hidden">
-    
+<body class="bg-zinc-950 text-white m-0 p-0">
     <div id="root"></div>
 
-    <script type="text/babel" data-type="module" src="App.jsx"></script>
+    <script type="text/babel">
+        const { useState, useEffect } = React;
 
+        function App() {
+            return (
+                <div style={{ 
+                    height: '100vh', 
+                    display: 'flex', 
+                    flexDirection: 'column', 
+                    alignItems: 'center', 
+                    justifyContent: 'center',
+                    background: '#09090b' 
+                }}>
+                    <div style={{ 
+                        padding: '40px', 
+                        border: '2px solid #2563eb', 
+                        borderRadius: '20px',
+                        textAlign: 'center',
+                        boxShadow: '0 0 20px rgba(37,99,235,0.3)'
+                    }}>
+                        <h1 style={{ 
+                            fontSize: '32px', 
+                            fontWeight: '900', 
+                            fontStyle: 'italic', 
+                            textTransform: 'uppercase',
+                            margin: '0 0 10px 0',
+                            color: '#fff'
+                        }}>
+                            SISTEMA BROADCAST PRO
+                        </h1>
+                        <p style={{ color: '#60a5fa', fontWeight: 'bold' }}>
+                            MAURO MAXIMILIANO POLINI
+                        </p>
+                        <div style={{ 
+                            marginTop: '20px', 
+                            padding: '10px', 
+                            background: '#166534', 
+                            borderRadius: '8px',
+                            fontSize: '12px',
+                            fontWeight: 'bold'
+                        }}>
+                            ESTADO: CONEXIÓN EXITOSA
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
 </body>
 </html>
