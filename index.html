@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Broadcast Control Pro</title>
     
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#dc2626" />
-    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3256/3256903.png" />
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@900&family=Orbitron:wght@700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@900&family=Orbitron:wght@700&family=Roboto:wght@900&display=swap">
     
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-zinc-950 text-white m-0 p-0 overflow-hidden">
-    <div id="root"></div>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-zinc-950 text-white m-0 p-0 overflow-hidden">
     
-    </body>
+    <div id="root"></div>
+
+    <script type="text/babel" data-type="module" src="App.jsx"></script>
+
+</body>
 </html>
